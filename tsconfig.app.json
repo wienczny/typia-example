@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "noEmit": false,
+    "strict": true,
+    //"sourceMap" : true,
+    "declaration": true,
+    "declarationMap": true,
+    "verbatimModuleSyntax": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": false,
+    "declarationDir": "dist/types",
+    "plugins": [
+      {
+        "transform": "typia/lib/transform"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "strictNullChecks": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ]
+}

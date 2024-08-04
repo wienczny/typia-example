@@ -1,0 +1,27 @@
+{
+  "name": "typia-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "prepare": "ts-patch install && typia patch"
+  },
+  "dependencies": {
+    "typia": "^6.7.0",
+    "vue": "^3.4.35"
+  },
+  "devDependencies": {
+    "@ryoppippi/unplugin-typia": "npm:@jsr/ryoppippi__unplugin-typia@^0.6.16",
+    "@types/node": "^22.1.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/tsconfig": "^0.5.1",
+    "sass": "^1.77.8",
+    "ts-patch": "^3.2.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.4",
+    "vue-tsc": "2.0.26"
+  }
+}
